@@ -1,0 +1,424 @@
+body{
+    margin: 0%;
+    background-color:#2e2e33 ;
+}
+
+main{
+    background-color: #2e2e33;
+}
+
+p{
+    color:white;
+}
+header{
+	  color: #2e2e33;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-left: 10px; 
+}
+nav{
+	   display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+
+	  display: flex;
+    justify-content: flex-start; 
+    width: auto;
+    height: auto;
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+.menus{
+	list-style: none;
+	background-color:#2e2e33;
+	padding:20px;
+	text-decoration: none;
+}
+
+.menus li{
+    margin-right: 20px; 
+    margin-left: 20px;  
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.menus li:hover ul{
+	display:block;
+	text-decoration: none;
+	transition: 5s;
+}
+
+.menus ul {
+	 display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c272a;
+    padding: 15px; 
+    width: 200px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.menus ul li a {
+	  display: block;
+    padding: 15px 20px; 
+    border-radius: 10px; 
+    color: white;
+    text-decoration: none; 
+}
+
+.menus ul li a:hover{
+	color:rgb(255, 255, 255);
+	  color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, blue, violet);
+    transition: background 0.3s ease;
+	 opacity: 0.9; 
+}
+
+.menu li a{
+	text-decoration: none;
+	padding: 10px;
+}
+
+a:link{
+	text-decoration: none;
+}
+a{
+	color:white;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 80px; 
+        height: auto;
+    }
+    
+    nav {
+        width: 100%; 
+    }
+
+    .menus li {
+        margin: 5px;
+    }
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.footer-section.iconos img {
+    width: 30px; 
+    height: auto;
+    margin: 0 15px; 
+    filter: grayscale(100%); 
+    transition: filter 0.3s;
+}
+
+.footer-section.iconos img:hover {
+    filter: grayscale(0%); 
+}
+
+.footer-section.links a {
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-section.links a:hover {
+    color: #ffffff; 
+}
+
+.footer-section.copyright {
+    font-size: 14px;
+    color: #666666; 
+}
+
+.footer-section.logo img {
+    height: auto;
+    margin: 0 1px; 
+    filter: grayscale(100%); 
+    transition: filter 3s;
+}
+
+.footer-section.logo img:hover {
+    filter: grayscale(0%); 
+}
+
+.footer-section.links {
+    clear: both;
+    margin-top: 0px; 
+}
+
+.footer-section.iconos {
+    clear: both;
+    margin-top: 0px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-section {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    margin-top: 35px; 
+    color: #2e2e33;
+}
+
+.footer-section.copyright {
+    clear: both;
+    margin-top: 0px;
+    border-top: 3px solid #ccc; 
+    padding-top: 20px; 
+}
+
+
+@media (max-width: 768px) {
+	
+	iframe{
+		width:100%;
+		height:100%;
+	}
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px; 
+    }
+
+   
+    nav {
+        width: 100%;
+    }
+
+    .lista-centrada{
+        margin-left:35px;
+        margin-right:35px;
+        margin-top:25px;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menus li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menus li ul {
+        position: static; 
+        width: 100%;
+    }
+}
+
+
+.rectangulosh1{
+ text-align: center;
+ height: auto;
+ width: 100%;
+ background-color: #37373d; 
+ border-style:solid;
+ color:gray;
+}
+
+.rectangulosh2{
+    text-align:center;
+    height:auto;
+    width:100%;
+    background-color:#37373d;
+    border-style:solid;
+    color:gray;
+	margin-bottom:15px;
+}
+
+.descripcion-juego {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #37373d; 
+}
+.descripcion-juego .logo-juego {
+    width: 30%; 
+}
+.descripcion-juego .descripcion {
+    width: 65%;
+    color: #37373d; 
+}
+
+.tiendas, .expansiones, .caracteristicas {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #37373d;
+}
+
+.expansionesnosotros{
+	background-color: #37373d;
+	color: white;
+	padding: 20px;
+}
+
+.lista-centrada {
+    list-style-position: inside; 
+    padding: 0; 
+    text-align: center; 
+    display: inline-block; 
+     list-style-position: inside;
+  padding: 0;
+  text-align: left;
+}
+
+.lista-centrada li {
+    margin-left: -20px; 
+     margin-bottom: 10px; 
+  color: white; 
+  margin-top:15px;
+}
+
+
+.logos-tiendas img {
+    width: 80px;
+    margin: 10px;
+}
+
+.pjuegos{
+    color:white;
+    font-size:20px;
+    padding:4px;
+}
+
+.pnosotros{
+	color:white;
+	font-size:25px;
+	margin-right:10%;
+	margin-left:10%;
+}
+
+
+@media (max-width: 768px) {
+      .descripcion-juego {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo-juego {
+        order: -1; 
+        width: 80%; 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; 
+    }
+
+    .descripcion {
+        width: 90%; 
+        margin: 0 auto;
+        padding: 10px; 
+        text-align: justify; 
+    }
+
+    .descripcion h2 {
+        font-size: 1.5em; 
+        margin-bottom: 10px;
+    }
+
+    .descripcion p {
+        font-size: 1em; 
+        line-height: 1.6; 
+    }
+}
+
+
+.padrenosotros{
+	width:100%;
+	min-height:50vh;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	align-items:stretch;
+	padding:20px;
+	border-radius:20px;
+}
+
+.tarjetas{
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+	border-radius:5%;
+	background-color:gray;
+	width:10%;
+	padding:5px;
+	height:25%;
+}
+
+.imgnosotros{
+	
+}
+
+.rocket{
+	display:block;
+	margin-left:25%;
+}
